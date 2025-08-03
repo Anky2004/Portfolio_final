@@ -2,7 +2,16 @@
 
 ## Overview
 
-This is a full-stack portfolio website for Ankita Saha, a final-year Electronics and Communication Engineering student. The application showcases her skills, projects, experience, education, and publications in an elegant, modern interface. Built as a single-page application with a contact form feature that allows visitors to send messages directly through the website.
+This is a full-stack portfolio website for Ankita Saha, a final-year Electronics and Communication Engineering student. The application showcases her skills, projects, experience, education, and publications in an elegant, modern purple-themed interface. Built as a single-page application with a contact form feature that allows visitors to send messages directly through the website.
+
+## Recent Changes (February 2025)
+
+- Enhanced purple theme throughout the website with custom color variables
+- Updated skills section: removed JavaScript from programming, added C language, added scikit-learn to AI/ML stack
+- Corrected education percentages: Class XII (85.4%) and Class X (93.4%)
+- Streamlined about section by condensing the summary text
+- Added professional photo of Ankita to the hero section
+- Maintained publications section highlighting research paper on Machine Learning Models for Photonic Crystal
 
 ## User Preferences
 

@@ -8,6 +8,7 @@ const skillCategories = [
     color: "purple",
     skills: [
       { name: "C++", level: 4 },
+      { name: "C", level: 4 },
       { name: "Python", level: 5 },
     ]
   },
@@ -17,7 +18,6 @@ const skillCategories = [
     color: "indigo",
     skills: [
       { name: "HTML/CSS", level: 5 },
-      { name: "JavaScript", level: 4 },
       { name: "Flask", level: 4 },
     ]
   },
@@ -30,6 +30,7 @@ const skillCategories = [
       { name: "Pandas", level: 5 },
       { name: "NumPy", level: 5 },
       { name: "Matplotlib", level: 4 },
+      { name: "scikit-learn", level: 4 },
     ]
   },
   {

@@ -17,11 +17,8 @@ export default function AboutSection() {
             <p className="text-gray-600 mb-6 leading-relaxed">
               As a final-year Electronics and Communication Engineering student at the Institute of Engineering and Management, I've maintained a stellar YGPA of 9.03 while diving deep into the fascinating world of technology.
             </p>
-            <p className="text-gray-600 mb-6 leading-relaxed">
-              My passion lies at the intersection of full-stack development and artificial intelligence. I believe in creating solutions that not only work efficiently but also make a meaningful impact on people's lives.
-            </p>
             <p className="text-gray-600 mb-8 leading-relaxed">
-              From developing AI-powered medical chatbots to building recommendation systems, I'm constantly exploring new technologies and pushing the boundaries of what's possible.
+              My passion lies at the intersection of full-stack development and artificial intelligence. I believe in creating solutions that not only work efficiently but also make a meaningful impact on people's lives. From developing AI-powered medical chatbots to building recommendation systems, I'm constantly exploring new technologies and pushing the boundaries of what's possible.
             </p>
             <div className="flex flex-wrap gap-3">
               <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">Problem Solver</span>
