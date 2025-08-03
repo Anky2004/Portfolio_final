@@ -10,7 +10,7 @@ const projects = [
     icon: Bot,
     color: "purple",
     featured: true,
-    githubUrl: "https://github.com/ankita-saha/medical-chatbot",
+    githubUrl: "https://github.com/Anky2004/Medical-chatbot",
     liveUrl: "https://medical-chatbot-demo.vercel.app",
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     icon: BookOpen,
     color: "indigo",
     featured: false,
-    githubUrl: "https://github.com/ankita-saha/book-recommender",
+    githubUrl: "https://github.com/Anky2004/BOOK-RECOMMENDER",
     liveUrl: "https://book-recommender-demo.vercel.app",
   },
 ];

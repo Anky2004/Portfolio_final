@@ -3,6 +3,16 @@ import { Building, Laptop } from "lucide-react";
 
 const experiences = [
   {
+    company: "State Bank of India",
+    position: "Project Intern",
+    description: "Anti-money laundering & high risk customer detection",
+    details: "Completed a project focusing on financial security and risk assessment using analytics and machine learning techniques to detect suspicious activities and identify high-risk customers.",
+    period: "May 2025 - July 2025",
+    icon: Building,
+    color: "purple",
+    upcoming: false,
+  },
+  {
     company: "Prodigy Infotech",
     position: "Web Development Intern",
     description: "Developed front-end websites like portfolio, weather app, landing page, Multiplayer Tic Tac Toe using HTML, CSS and JavaScript",
@@ -11,16 +21,6 @@ const experiences = [
     icon: Laptop,
     color: "indigo",
     technologies: ["HTML", "CSS", "JavaScript"],
-    upcoming: false,
-  },
-  {
-    company: "State Bank of India",
-    position: "Project Intern",
-    description: "Anti-money laundering & high risk customer detection",
-    details: "Completed a project focusing on financial security and risk assessment using advanced analytics and machine learning techniques to detect suspicious activities and identify high-risk customers.",
-    period: "May 2025 - July 2025",
-    icon: Building,
-    color: "purple",
     upcoming: false,
   },
 ];

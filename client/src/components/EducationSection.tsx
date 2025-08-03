@@ -7,33 +7,21 @@ const educationData = [
     field: "Electronics and Communication Engineering",
     institution: "Institute of Engineering and Management",
     period: "2022 - 2026",
-    achievement: "9.03",
-    achievementLabel: "YGPA",
-    achievementSubtext: "(till 6th semester)",
-    icon: GraduationCap,
-    color: "purple",
+    
   },
   {
     degree: "Higher Secondary (XII)",
     field: "AISSCE",
     institution: "South Point High School",
     period: "All India Senior School Certificate Examination",
-    achievement: "85.4%",
-    achievementLabel: "Percentage",
-    achievementSubtext: "",
-    icon: School,
-    color: "indigo",
+   
   },
   {
     degree: "Secondary (X)",
     field: "AISSE",
     institution: "South Point High School",
     period: "All India Secondary School Examination",
-    achievement: "93.4%",
-    achievementLabel: "Percentage",
-    achievementSubtext: "",
-    icon: BookOpen,
-    color: "green",
+   
   },
 ];
 
