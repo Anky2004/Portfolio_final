@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Code, Mail, ArrowRight } from "lucide-react";
+import { Code, Mail, ArrowRight, Github, Linkedin } from "lucide-react";
 import ankitaImage from "@assets/ankita_1754198149923.jpg";
 
 export default function HeroSection() {
@@ -25,10 +25,10 @@ export default function HeroSection() {
                 Full Stack Developer & AI/ML Enthusiast
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               <Button
                 onClick={() => scrollToSection("projects")}
-                className="bg-gradient-purple text-[#9333ea] font-medium hover:opacity-90 transform hover:scale-105 transition-all duration-200 shadow-lg"
+                className="bg-gradient-purple text-white font-medium hover:opacity-90 transform hover:scale-105 transition-all duration-200 shadow-lg"
                 size="lg"
               >
                 <Code className="mr-2 h-4 w-4" />
@@ -44,6 +44,32 @@ export default function HeroSection() {
                 <Mail className="mr-2 h-4 w-4" />
                 Get In Touch
               </Button>
+            </div>
+            
+            {/* Social Media Links */}
+            <div className="flex gap-4 justify-center lg:justify-start">
+              <a
+                href="https://github.com/ankita-saha"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-white border-2 border-purple-200 rounded-full flex items-center justify-center text-purple-600 hover:bg-purple-50 hover:border-purple-400 transform hover:scale-110 transition-all duration-200 shadow-md"
+              >
+                <Github className="h-5 w-5" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ankita-saha"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-12 h-12 bg-white border-2 border-purple-200 rounded-full flex items-center justify-center text-purple-600 hover:bg-purple-50 hover:border-purple-400 transform hover:scale-110 transition-all duration-200 shadow-md"
+              >
+                <Linkedin className="h-5 w-5" />
+              </a>
+              <a
+                href="mailto:saharaiankita@gmail.com"
+                className="w-12 h-12 bg-white border-2 border-purple-200 rounded-full flex items-center justify-center text-purple-600 hover:bg-purple-50 hover:border-purple-400 transform hover:scale-110 transition-all duration-200 shadow-md"
+              >
+                <Mail className="h-5 w-5" />
+              </a>
             </div>
           </div>
           <div className="flex justify-center lg:justify-end">

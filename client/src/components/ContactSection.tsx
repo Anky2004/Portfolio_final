@@ -113,7 +113,9 @@ export default function ContactSection() {
                 <div>
                   <p className="text-gray-200 text-sm">LinkedIn</p>
                   <a 
-                    href="#" 
+                    href="https://www.linkedin.com/in/ankita-saha" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-white font-medium hover:text-purple-300 transition-colors"
                   >
                     Connect on LinkedIn

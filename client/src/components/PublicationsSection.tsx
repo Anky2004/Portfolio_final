@@ -48,11 +48,14 @@ export default function PublicationsSection() {
                       <span>Academic Publication</span>
                     </div>
                     <Button
+                      asChild
                       variant="ghost"
                       className="text-purple-600 hover:text-purple-700 hover:bg-purple-50 font-medium hover:transform hover:translate-x-1 transition-all duration-200"
                     >
-                      Read Paper
-                      <ExternalLink className="ml-2 h-4 w-4" />
+                      <a href="https://doi.org/10.1000/example-doi" target="_blank" rel="noopener noreferrer">
+                        Read Paper
+                        <ExternalLink className="ml-2 h-4 w-4" />
+                      </a>
                     </Button>
                   </div>
                 </div>

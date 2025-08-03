@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Bot, BookOpen, Star, Users, ArrowRight } from "lucide-react";
+import { Bot, BookOpen, Star, Users, ArrowRight, Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
@@ -10,6 +10,8 @@ const projects = [
     icon: Bot,
     color: "purple",
     featured: true,
+    githubUrl: "https://github.com/ankita-saha/medical-chatbot",
+    liveUrl: "https://medical-chatbot-demo.vercel.app",
   },
   {
     title: "Book Recommender System",
@@ -18,6 +20,8 @@ const projects = [
     icon: BookOpen,
     color: "indigo",
     featured: false,
+    githubUrl: "https://github.com/ankita-saha/book-recommender",
+    liveUrl: "https://book-recommender-demo.vercel.app",
   },
 ];
 
@@ -84,13 +88,28 @@ export default function ProjectsSection() {
                         </>
                       )}
                     </div>
-                    <Button
-                      variant="ghost"
-                      className={`${textColor} hover:${textColor.replace('text-', 'bg-').replace('-600', '-50')} font-medium group-hover:transform group-hover:translate-x-1 transition-all duration-200`}
-                    >
-                      View Details
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
+                    <div className="flex gap-2">
+                      <Button
+                        asChild
+                        variant="ghost"
+                        size="sm"
+                        className={`${textColor} hover:${textColor.replace('text-', 'bg-').replace('-600', '-50')} font-medium`}
+                      >
+                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                          <Github className="h-4 w-4" />
+                        </a>
+                      </Button>
+                      <Button
+                        asChild
+                        variant="ghost"
+                        size="sm"
+                        className={`${textColor} hover:${textColor.replace('text-', 'bg-').replace('-600', '-50')} font-medium`}
+                      >
+                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                          <ExternalLink className="h-4 w-4" />
+                        </a>
+                      </Button>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
