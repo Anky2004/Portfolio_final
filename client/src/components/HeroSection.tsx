@@ -28,7 +28,7 @@ export default function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-8">
               <Button
                 onClick={() => scrollToSection("projects")}
-                className="bg-gradient-purple text-white font-medium hover:opacity-90 transform hover:scale-105 transition-all duration-200 shadow-lg"
+                className="bg-gradient-purple text-[#9336ea] font-medium hover:opacity-90 transform hover:scale-105 transition-all duration-200 shadow-lg"
                 size="lg"
               >
                 <Code className="mr-2 h-4 w-4" />
