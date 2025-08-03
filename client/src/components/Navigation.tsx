@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navItems = [
@@ -74,6 +74,17 @@ export default function Navigation() {
                   {item.label}
                 </button>
               ))}
+              <Button
+                asChild
+                variant="outline"
+                size="sm"
+                className="border-purple-600 text-purple-600 hover:bg-purple-50 ml-4"
+              >
+                <a href="/Ankita_Saha_Resume.pdf" download="Ankita_Saha_Resume.pdf">
+                  <Download className="mr-2 h-4 w-4" />
+                  Resume
+                </a>
+              </Button>
             </div>
           </div>
 
@@ -108,6 +119,14 @@ export default function Navigation() {
                 {item.label}
               </button>
             ))}
+            <a 
+              href="/Ankita_Saha_Resume.pdf" 
+              download="Ankita_Saha_Resume.pdf"
+              className="block px-3 py-2 text-base font-medium w-full text-left text-purple-600 hover:bg-purple-50 border border-purple-600 rounded-md mt-2"
+            >
+              <Download className="inline mr-2 h-4 w-4" />
+              Download Resume
+            </a>
           </div>
         </div>
       )}

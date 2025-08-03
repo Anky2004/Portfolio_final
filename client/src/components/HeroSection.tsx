@@ -21,11 +21,8 @@ export default function HeroSection() {
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-4">
                 Ankita <span className="text-gradient">Saha</span>
               </h1>
-              <p className="text-xl sm:text-2xl text-gray-600 mb-6">
+              <p className="text-xl sm:text-2xl text-gray-600 mb-8">
                 Full Stack Developer & AI/ML Enthusiast
-              </p>
-              <p className="text-lg text-gray-600 max-w-2xl mb-8">
-                Final-year Electronics and Communication Engineering student with expertise in Data Structures, Algorithms, and Machine Learning. Passionate about creating impactful full-stack applications integrated with AI/ML technologies.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">

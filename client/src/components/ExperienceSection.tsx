@@ -4,13 +4,13 @@ import { Building, Laptop } from "lucide-react";
 const experiences = [
   {
     company: "State Bank of India",
-    position: "Upcoming Internship",
+    position: "Project Intern",
     description: "Anti-money laundering & high risk customer detection",
-    details: "Selected for an upcoming internship focusing on financial security and risk assessment using advanced analytics and machine learning techniques.",
+    details: "Completed a project focusing on financial security and risk assessment using advanced analytics and machine learning techniques to detect suspicious activities and identify high-risk customers.",
     period: "May 2025 - July 2025",
     icon: Building,
     color: "purple",
-    upcoming: true,
+    upcoming: false,
   },
   {
     company: "Prodigy Infotech",

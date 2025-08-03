@@ -1,0 +1,214 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+/F2 6 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 2800
+>>
+stream
+BT
+/F1 18 Tf
+50 750 Td
+(ANKITA SAHA) Tj
+0 -30 Td
+/F2 12 Tf
+(saharaiankita@gmail.com | +91-9874382004 | LinkedIn) Tj
+
+0 -40 Td
+/F1 14 Tf
+(SUMMARY) Tj
+0 -20 Td
+/F2 11 Tf
+(I'm a final-year Electronics and Communication Engineering student with a solid) Tj
+0 -15 Td
+(foundation in Data Structures and Algorithms, seeking a role where I can contribute) Tj
+0 -15 Td
+(to impactful full stack projects integrated with AI and Machine Learning in real-world) Tj
+0 -15 Td
+(applications.) Tj
+
+0 -30 Td
+/F1 14 Tf
+(SKILLS) Tj
+0 -20 Td
+/F2 11 Tf
+(Languages: C++, Python) Tj
+0 -15 Td
+(Web related: HTML, CSS, JavaScript, Flask) Tj
+0 -15 Td
+(Databases: MySQL) Tj
+0 -15 Td
+(ML related: TensorFlow, Pandas, NumPy, Matplotlib) Tj
+0 -15 Td
+(Computer fundamentals: OS, OOPS, DSA) Tj
+
+0 -30 Td
+/F1 14 Tf
+(EXPERIENCE) Tj
+0 -20 Td
+/F2 12 Tf
+(State Bank of India) Tj
+350 0 Td
+(May 2025-July 2025) Tj
+-350 -15 Td
+/F2 11 Tf
+(Anti-money laundering & high risk customer detection) Tj
+
+0 -25 Td
+/F2 12 Tf
+(Prodigy Infotech) Tj
+350 0 Td
+(June 2024 - July 2024) Tj
+-350 -15 Td
+/F2 11 Tf
+(Developed front-end websites like portfolio, weather app, landing page,) Tj
+0 -15 Td
+(Multiplayer Tic Tac Toe using HTML, CSS and JavaScript) Tj
+
+0 -30 Td
+/F1 14 Tf
+(EDUCATION) Tj
+0 -20 Td
+/F2 12 Tf
+(Institute of Engineering and Management) Tj
+350 0 Td
+(2022 - 2026) Tj
+-350 -15 Td
+/F2 11 Tf
+(B.Tech in Electronics and Communication Engineering) Tj
+0 -15 Td
+(YGPA (till 6th semester): 9.03) Tj
+
+0 -25 Td
+/F2 12 Tf
+(South Point High School -AISSE) Tj
+0 -15 Td
+/F2 11 Tf
+(Percentage: 85.4%) Tj
+
+0 -20 Td
+/F2 12 Tf
+(South Point High School-AISSCE) Tj
+0 -15 Td
+/F2 11 Tf
+(Percentage: 93.4%) Tj
+
+0 -30 Td
+/F1 14 Tf
+(PROJECTS) Tj
+0 -20 Td
+/F2 12 Tf
+(Medical chatbot) Tj
+0 -15 Td
+/F2 11 Tf
+(Built an AI-powered medical chatbot using Flask, LangChain, and Together.ai,) Tj
+0 -15 Td
+(leveraging a custom knowledge base from medical PDFs indexed with Pinecone) Tj
+0 -15 Td
+(and HuggingFace embeddings. Integrated personalized medicine reminders with) Tj
+0 -15 Td
+(user authentication, real-time popups, and a responsive UI using bootstrap.) Tj
+0 -15 Td
+(Tools used: Flask, LangChain, Together.ai(Mixtral-8x7B), HuggingFace) Tj
+0 -15 Td
+(Embeddings, SQLite, Pinecone) Tj
+
+0 -25 Td
+/F2 12 Tf
+(Book Recommender) Tj
+0 -15 Td
+/F2 11 Tf
+(Developed a book recommendation system using collaborative filtering techniques) Tj
+0 -15 Td
+(to suggest personalized books based on user ratings.) Tj
+0 -15 Td
+(Tools used: Flask, Numpy, Pandas) Tj
+
+0 -30 Td
+/F1 14 Tf
+(CERTIFICATIONS) Tj
+0 -20 Td
+/F2 11 Tf
+(Introduction to Generative AI Certificate - Coursera) Tj
+0 -15 Td
+(Machine Learning Foundations: Statistics Certificate - LinkedIn Learning) Tj
+0 -15 Td
+(Deloitte Australia Technology Job Simulation on Forage - Certificate) Tj
+0 -15 Td
+(Machine Learning with Python, IBM-Certificate - Coursera) Tj
+
+0 -30 Td
+/F1 14 Tf
+(PUBLICATIONS) Tj
+0 -20 Td
+/F2 12 Tf
+(Review Paper on Machine Learning Models for Photonic Crystal) Tj
+0 -15 Td
+/F2 11 Tf
+(Authors: Ankita Saha, Jishan Mitra, Dr Rajib Ghosh) Tj
+
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica-Bold
+>>
+endobj
+
+6 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 7
+0000000000 65535 f 
+0000000010 00000 n 
+0000000053 00000 n 
+0000000110 00000 n 
+0000000260 00000 n 
+0000003114 00000 n 
+0000003197 00000 n 
+trailer
+<<
+/Size 7
+/Root 1 0 R
+>>
+startxref
+3275
+%%EOF
