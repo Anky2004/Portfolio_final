@@ -1,0 +1,692 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Chen - Creative Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'dark-slate': '#0F172A',
+                        'medium-slate': '#1E293B',
+                        'accent-blue': '#3B82F6',
+                        'accent-purple': '#8B5CF6',
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in': 'fadeIn 0.8s ease-out',
+                        'slide-up': 'slideUp 0.6s ease-out',
+                    },
+                }
+            }
+        };
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(50px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #3B82F6, #8B5CF6);
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+        }
+        .skill-bar {
+            transition: width 1s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-dark-slate text-slate-100 font-inter">
+    <!-- Navigation -->
+    <!-- @COMPONENT: Navigation [fixed header with smooth scroll links] -->
+    <nav class="fixed top-0 w-full bg-dark-slate/90 backdrop-blur-md z-50 border-b border-slate-800">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-bold gradient-text" data-mock="true">Alex Chen</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="hover:text-accent-blue transition-colors">Home</a>
+                    <a href="#about" class="hover:text-accent-blue transition-colors">About</a>
+                    <a href="#skills" class="hover:text-accent-blue transition-colors">Skills</a>
+                    <a href="#portfolio" class="hover:text-accent-blue transition-colors">Portfolio</a>
+                    <a href="#contact" class="hover:text-accent-blue transition-colors">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-slate-100 hover:text-accent-blue">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- @END_COMPONENT: Navigation -->
+
+    <!-- Hero Section -->
+    <!-- @COMPONENT: Hero [animated introduction with CTA] -->
+    <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 gradient-bg opacity-10"></div>
+        <div class="container mx-auto px-6 text-center z-10">
+            <div class="animate-fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    <span data-mock="true">Creative</span>
+                    <span class="gradient-text"> Developer</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-slate-300 mb-8 max-w-3xl mx-auto" data-mock="true">
+                    I craft digital experiences that blend innovative design with cutting-edge technology, 
+                    bringing ideas to life through code and creativity.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="gradient-bg text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all transform hover:scale-105">
+                        View My Work
+                    </button>
+                    <button class="border-2 border-accent-blue text-accent-blue px-8 py-4 rounded-lg font-semibold hover:bg-accent-blue hover:text-white transition-all">
+                        Get In Touch
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <i class="fas fa-chevron-down text-accent-blue text-xl"></i>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero -->
+
+    <!-- About Section -->
+    <!-- @COMPONENT: About [professional background and personality] -->
+    <section id="about" class="py-20 bg-medium-slate">
+        <div class="container mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="animate-slide-up">
+                    <h2 class="text-4xl font-bold mb-6">About <span class="gradient-text">Me</span></h2>
+                    <p class="text-lg text-slate-300 mb-6" data-mock="true">
+                        With over 5 years of experience in web development and design, I specialize in creating 
+                        digital experiences that not only look stunning but also deliver exceptional user experiences. 
+                        My passion lies in the intersection of design and technology.
+                    </p>
+                    <p class="text-lg text-slate-300 mb-8" data-mock="true">
+                        I believe in clean code, pixel-perfect designs, and the power of collaboration. 
+                        When I'm not coding, you can find me exploring new design trends, contributing to open-source projects, 
+                        or sharing knowledge with the developer community.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-12 h-12 bg-accent-blue rounded-full flex items-center justify-center hover:bg-accent-purple transition-colors">
+                            <i class="fab fa-github text-white"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-accent-blue rounded-full flex items-center justify-center hover:bg-accent-purple transition-colors">
+                            <i class="fab fa-linkedin text-white"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-accent-blue rounded-full flex items-center justify-center hover:bg-accent-purple transition-colors">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="#" class="w-12 h-12 bg-accent-blue rounded-full flex items-center justify-center hover:bg-accent-purple transition-colors">
+                            <i class="fab fa-dribbble text-white"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="animate-float">
+                    <!-- Professional headshot of a creative developer in a modern workspace -->
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=800" 
+                         alt="Professional developer portrait" 
+                         class="rounded-2xl shadow-2xl w-full h-auto max-w-md mx-auto"
+                         data-mock-image="true" data-implementation="Replace with actual professional headshot" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: About -->
+
+    <!-- Skills Section -->
+    <!-- @COMPONENT: Skills [expertise showcase with visual indicators] -->
+    <section id="skills" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">My <span class="gradient-text">Skills</span></h2>
+                <p class="text-xl text-slate-300" data-mock="true">Technologies and tools I work with</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Frontend Skills -->
+                <div class="bg-medium-slate p-8 rounded-xl hover:shadow-lg hover:shadow-blue-500/10 transition-all">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-code text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4" data-mock="true">Frontend Development</h3>
+                    <div class="space-y-3">
+                        <div data-mock="true">
+                            <div class="flex justify-between mb-1">
+                                <span>React/Next.js</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full skill-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div data-mock="true">
+                            <div class="flex justify-between mb-1">
+                                <span>TypeScript</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div data-mock="true">
+                            <div class="flex justify-between mb-1">
+                                <span>Tailwind CSS</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full skill-bar" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="bg-medium-slate p-8 rounded-xl hover:shadow-lg hover:shadow-blue-500/10 transition-all">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-server text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4" data-mock="true">Backend Development</h3>
+                    <div class="space-y-3">
+                        <div data-mock="true">
+                            <div class="flex justify-between mb-1">
+                                <span>Node.js</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full skill-bar" style="width: 88%"></div>
+                            </div>
+                        </div>
+                        <div data-mock="true">
+                            <div class="flex justify-between mb-1">
+                                <span>Python</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full skill-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div data-mock="true">
+                            <div class="flex justify-between mb-1">
+                                <span>PostgreSQL</span>
+                                <span>82%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full skill-bar" style="width: 82%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Skills -->
+                <div class="bg-medium-slate p-8 rounded-xl hover:shadow-lg hover:shadow-blue-500/10 transition-all">
+                    <div class="w-16 h-16 gradient-bg rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-paint-brush text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4" data-mock="true">Design & UX</h3>
+                    <div class="space-y-3">
+                        <div data-mock="true">
+                            <div class="flex justify-between mb-1">
+                                <span>Figma</span>
+                                <span>93%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full skill-bar" style="width: 93%"></div>
+                            </div>
+                        </div>
+                        <div data-mock="true">
+                            <div class="flex justify-between mb-1">
+                                <span>Adobe Creative Suite</span>
+                                <span>87%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full skill-bar" style="width: 87%"></div>
+                            </div>
+                        </div>
+                        <div data-mock="true">
+                            <div class="flex justify-between mb-1">
+                                <span>UI/UX Design</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="w-full bg-slate-700 rounded-full h-2">
+                                <div class="gradient-bg h-2 rounded-full skill-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Skills -->
+
+    <!-- Portfolio Section -->
+    <!-- @COMPONENT: Portfolio [project gallery with interactive cards] -->
+    <section id="portfolio" class="py-20 bg-medium-slate">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">My <span class="gradient-text">Portfolio</span></h2>
+                <p class="text-xl text-slate-300" data-mock="true">A collection of projects I'm proud to have worked on</p>
+            </div>
+
+            <!-- @MAP: projects.map(project => ( -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-dark-slate rounded-xl overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <!-- Modern e-commerce website interface with clean product layouts -->
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                             alt="E-commerce platform dashboard" 
+                             class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                             data-mock-image="true" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-slate via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex space-x-2">
+                                <a href="#" class="w-10 h-10 bg-accent-blue rounded-full flex items-center justify-center hover:bg-accent-purple transition-colors">
+                                    <i class="fas fa-external-link-alt text-white text-sm"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-accent-blue rounded-full flex items-center justify-center hover:bg-accent-purple transition-colors">
+                                    <i class="fab fa-github text-white text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2" data-mock="true">E-Commerce Platform</h3>
+                        <p class="text-slate-300 mb-4" data-mock="true">
+                            A full-stack e-commerce solution built with Next.js, featuring real-time inventory management, 
+                            payment processing, and an intuitive admin dashboard.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">React</span>
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">Node.js</span>
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-dark-slate rounded-xl overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <!-- Mobile app interface showing task management and productivity features -->
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                             alt="Task management mobile app interface" 
+                             class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                             data-mock-image="true" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-slate via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex space-x-2">
+                                <a href="#" class="w-10 h-10 bg-accent-blue rounded-full flex items-center justify-center hover:bg-accent-purple transition-colors">
+                                    <i class="fas fa-external-link-alt text-white text-sm"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-accent-blue rounded-full flex items-center justify-center hover:bg-accent-purple transition-colors">
+                                    <i class="fab fa-github text-white text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2" data-mock="true">Task Management App</h3>
+                        <p class="text-slate-300 mb-4" data-mock="true">
+                            A cross-platform mobile application for team collaboration and project management, 
+                            featuring real-time updates, file sharing, and advanced analytics.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">React Native</span>
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">Firebase</span>
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">TypeScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bg-dark-slate rounded-xl overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <!-- Data visualization dashboard with charts and analytics -->
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                             alt="Analytics dashboard with data visualization" 
+                             class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                             data-mock-image="true" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-slate via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex space-x-2">
+                                <a href="#" class="w-10 h-10 bg-accent-blue rounded-full flex items-center justify-center hover:bg-accent-purple transition-colors">
+                                    <i class="fas fa-external-link-alt text-white text-sm"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-accent-blue rounded-full flex items-center justify-center hover:bg-accent-purple transition-colors">
+                                    <i class="fab fa-github text-white text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2" data-mock="true">Analytics Dashboard</h3>
+                        <p class="text-slate-300 mb-4" data-mock="true">
+                            An enterprise-level analytics platform with interactive data visualizations, 
+                            custom reporting tools, and machine learning-powered insights.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">Vue.js</span>
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">Python</span>
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">D3.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card bg-dark-slate rounded-xl overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <!-- Modern blog website with clean typography and reading experience -->
+                        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                             alt="Modern blog platform interface" 
+                             class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                             data-mock-image="true" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-slate via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex space-x-2">
+                                <a href="#" class="w-10 h-10 bg-accent-blue rounded-full flex items-center justify-center hover:bg-accent-purple transition-colors">
+                                    <i class="fas fa-external-link-alt text-white text-sm"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-accent-blue rounded-full flex items-center justify-center hover:bg-accent-purple transition-colors">
+                                    <i class="fab fa-github text-white text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2" data-mock="true">Content Management System</h3>
+                        <p class="text-slate-300 mb-4" data-mock="true">
+                            A headless CMS built for modern content creators, featuring markdown support, 
+                            SEO optimization, and a beautiful writing experience.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">Gatsby</span>
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">GraphQL</span>
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">Strapi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card bg-dark-slate rounded-xl overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <!-- Fintech app interface showing financial data and transactions -->
+                        <img src="https://images.unsplash.com/photo-1559526324-4b87b5e36e44?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                             alt="Fintech app with financial data visualization" 
+                             class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                             data-mock-image="true" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-slate via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex space-x-2">
+                                <a href="#" class="w-10 h-10 bg-accent-blue rounded-full flex items-center justify-center hover:bg-accent-purple transition-colors">
+                                    <i class="fas fa-external-link-alt text-white text-sm"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-accent-blue rounded-full flex items-center justify-center hover:bg-accent-purple transition-colors">
+                                    <i class="fab fa-github text-white text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2" data-mock="true">Financial Trading Platform</h3>
+                        <p class="text-slate-300 mb-4" data-mock="true">
+                            A secure trading platform with real-time market data, advanced charting tools, 
+                            and automated trading strategies for cryptocurrency and stocks.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">React</span>
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">WebSocket</span>
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card bg-dark-slate rounded-xl overflow-hidden group">
+                    <div class="relative overflow-hidden">
+                        <!-- Social media app interface with modern design and user interactions -->
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600" 
+                             alt="Social media platform with modern interface" 
+                             class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                             data-mock-image="true" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-slate via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="flex space-x-2">
+                                <a href="#" class="w-10 h-10 bg-accent-blue rounded-full flex items-center justify-center hover:bg-accent-purple transition-colors">
+                                    <i class="fas fa-external-link-alt text-white text-sm"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 bg-accent-blue rounded-full flex items-center justify-center hover:bg-accent-purple transition-colors">
+                                    <i class="fab fa-github text-white text-sm"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2" data-mock="true">Social Networking App</h3>
+                        <p class="text-slate-300 mb-4" data-mock="true">
+                            A next-generation social platform focused on meaningful connections, 
+                            featuring AI-powered content curation and privacy-first design principles.
+                        </p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">Flutter</span>
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">Dart</span>
+                            <span class="px-3 py-1 bg-accent-blue/20 text-accent-blue rounded-full text-sm" data-mock="true">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- @END_MAP )) -->
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Portfolio -->
+
+    <!-- Contact Section -->
+    <!-- @COMPONENT: Contact [contact form and information] -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="text-xl text-slate-300" data-mock="true">Ready to start your next project? Let's discuss how I can help.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6" data-mock="true">Let's Connect</h3>
+                        <p class="text-lg text-slate-300 mb-8" data-mock="true">
+                            I'm always open to discussing new opportunities, interesting projects, 
+                            or just having a conversation about technology and design.
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold" data-mock="true">Email</p>
+                                <p class="text-slate-300" data-mock="true">hello@alexchen.dev</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold" data-mock="true">Phone</p>
+                                <p class="text-slate-300" data-mock="true">+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 gradient-bg rounded-lg flex items-center justify-center">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-semibold" data-mock="true">Location</p>
+                                <p class="text-slate-300" data-mock="true">San Francisco, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-medium-slate p-8 rounded-xl">
+                    <form class="space-y-6" data-event="submit:handleContactForm" data-implementation="Should validate and send email">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium mb-2" data-mock="true">First Name</label>
+                                <input type="text" 
+                                       class="w-full bg-dark-slate border border-slate-600 rounded-lg px-4 py-3 focus:border-accent-blue focus:outline-none transition-colors" 
+                                       placeholder="John" 
+                                       data-mock="true" />
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2" data-mock="true">Last Name</label>
+                                <input type="text" 
+                                       class="w-full bg-dark-slate border border-slate-600 rounded-lg px-4 py-3 focus:border-accent-blue focus:outline-none transition-colors" 
+                                       placeholder="Doe" 
+                                       data-mock="true" />
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium mb-2" data-mock="true">Email</label>
+                            <input type="email" 
+                                   class="w-full bg-dark-slate border border-slate-600 rounded-lg px-4 py-3 focus:border-accent-blue focus:outline-none transition-colors" 
+                                   placeholder="john@example.com" 
+                                   data-mock="true" />
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium mb-2" data-mock="true">Subject</label>
+                            <input type="text" 
+                                   class="w-full bg-dark-slate border border-slate-600 rounded-lg px-4 py-3 focus:border-accent-blue focus:outline-none transition-colors" 
+                                   placeholder="Project Discussion" 
+                                   data-mock="true" />
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium mb-2" data-mock="true">Message</label>
+                            <textarea rows="4" 
+                                      class="w-full bg-dark-slate border border-slate-600 rounded-lg px-4 py-3 focus:border-accent-blue focus:outline-none transition-colors" 
+                                      placeholder="Tell me about your project..." 
+                                      data-mock="true"></textarea>
+                        </div>
+
+                        <button type="submit" 
+                                class="w-full gradient-bg text-white py-3 rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/25 transition-all transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Contact -->
+
+    <!-- Footer -->
+    <!-- @COMPONENT: Footer [copyright and social links] -->
+    <footer class="bg-dark-slate border-t border-slate-800 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-slate-300" data-mock="true">&copy; 2024 Alex Chen. All rights reserved.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-slate-300 hover:text-accent-blue transition-colors">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="text-slate-300 hover:text-accent-blue transition-colors">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                    <a href="#" class="text-slate-300 hover:text-accent-blue transition-colors">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-slate-300 hover:text-accent-blue transition-colors">
+                        <i class="fab fa-dribbble text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        (function() {
+            // TODO: Implement smooth scroll behavior for navigation
+            // TODO: Add intersection observer for scroll animations
+            // TODO: Implement form validation and submission
+            // TODO: Add loading states for interactive elements
+            
+            // Simple demo functionality - would be replaced with proper React state management
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Simple animation on scroll (would be handled by libraries like Framer Motion in React)
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements with animation classes
+            document.querySelectorAll('.animate-slide-up, .animate-fade-in').forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+                observer.observe(el);
+            });
+        })();
+    </script>
+</body>
+</html>
